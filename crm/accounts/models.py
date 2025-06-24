@@ -23,3 +23,5 @@ class Vote(models.Model):
 
     class Meta:
         unique_together = ('account', 'vote_by')
+
+        
