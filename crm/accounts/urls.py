@@ -21,9 +21,11 @@ from rest_framework.routers import DefaultRouter
 from .views import AccountViewset
 
 router = DefaultRouter()
-router.register(r'account', AccountViewset)
+router.register(r'accounts', AccountViewset, basename='accounts')
 
 urlpatterns = [
     path('api/', include(router.urls)),
+    
+
 ]
 
